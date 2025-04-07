@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>RSA - Premium Camera & Drone Rental Service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-circle">
+                    <a href="#hero">
+                        <img src="RSA photography logo.png" alt="Circular Logo">
+                    </a>
+                </div>
+            </div>
+
+            <nav class="desktop-nav">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#products" class="nav-link" data-filter="camera">Rent a Camera</a>
+                <a href="#products" class="nav-link" data-filter="drone">Rent a Drone</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div class="mobile-menu">
+            <div class="container">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#products" class="nav-link" data-filter="camera">Rent a Camera</a>
+                <a href="#products" class="nav-link" data-filter="drone">Rent a Drone</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="video-container">
+                <video autoplay muted loop id="hero-video">
+                    <source src="Example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="overlay"></div>
+            </div>
+            <div class="container hero-content animate__animated animate__fadeIn">
+                <h1 class="animate__animated animate__fadeInUp">Rent the Best Drones & Cameras</h1>
+                <p class="animate__animated animate__fadeInUp animate__delay-1s">Professional equipment for all your photography and videography needs</p>
+                <a href="#products" class="cta-btn animate__animated animate__fadeInUp animate__delay-2s">Explore Now</a>
+            </div>
+        </section>
+
+        <section id="promo" class="promo-section">
+            <div class="container">
+                <div class="section-header animate__animated animate__fadeIn">
+                    <h2>See Our Equipment in Action</h2>
+                    <p>Watch how our premium cameras and drones can elevate your creative projects</p>
+                </div>
+
+                <div class="video-player" id="videoPlayer">
+                    <video id="promo-video" src="Example 2.mp4" alt="Drone flying over mountains" style="width: 100%; height: auto;">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button class="play-btn" id="playButton" aria-label="Play video">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+
+        </section>
+
+        <section id="products" class="products-section">
+            <div class="container">
+                <div class="section-header animate__animated animate__fadeIn">
+                    <h2>Our Rental Equipment</h2>
+                    <p>Choose from our wide selection of professional cameras and drones</p>
+                </div>
+
+                <div class="filter-buttons animate__animated animate__fadeIn">
+                    <button class="filter-btn active" data-filter="all">All Equipment</button>
+                    <button class="filter-btn" data-filter="camera">Cameras</button>
+                    <button class="filter-btn" data-filter="drone">Drones</button>
+                </div>
+
+                <div class="product-grid" id="product-grid">
+                    </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content animate__animated animate__fadeIn">
+                        <h2>About Us</h2>
+                        <p>RSA is a premium service providing high-quality photography and videography equipment for professionals and enthusiasts alike.</p>
+                        <p>Our mission is to make professional-grade equipment accessible to everyone, from seasoned professionals to hobbyists looking to try something new.</p>
+
+                        <div class="feature-list">
+                            <div class="feature-item animate__animated animate__fadeInLeft">
+                                <div class="feature-icon"><i class="fas fa-check"></i></div>
+                                <div class="feature-text">
+                                    <h3>Premium Equipment</h3>
+                                    <p>All our equipment is regularly maintained and tested.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item animate__animated animate__fadeInLeft animate__delay-1s">
+                                <div class="feature-icon"><i class="fas fa-check"></i></div>
+                                <div class="feature-text">
+                                    <h3>Expert Support</h3>
+                                    <p>Our team of experts is always ready to assist you.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item animate__animated animate__fadeInLeft animate__delay-2s">
+                                <div class="feature-icon"><i class="fas fa-check"></i></div>
+                                <div class="feature-text">
+                                    <h3>Flexible Rental Plans</h3>
+                                    <p>Daily, weekly, and monthly plans to suit your needs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image animate__animated animate__fadeIn animate__delay-1s">
+                        <img src="https://images.unsplash.com/photo-1563048288-43e146992bf7?auto=format&fit=crop&q=80" alt="Team of photographers and videographers">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header animate__animated animate__fadeIn">
+                    <h2>Contact Us</h2>
+                    <p>Have questions about our rental service? Get in touch with our team.</p>
+                </div>
+
+                    <div class="contact-info animate__animated animate__fadeIn animate__delay-1s">
+                        <center><div class="contact-card">
+                            <h3>Our Location</h3>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="info-text">
+                                    <h4>Address</h4>
+                                    <p>123 Photography Lane, Drone City, DC 10001</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                                <div class="info-text">
+                                    <h4>Phone</h4>
+                                    <p>+91 123 456 7890</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="info-text">
+                                    <h4>Email</h4>
+                                    <p>info@rsa.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-clock"></i></div>
+                                <div class="info-text">
+                                    <h4>Working Hours</h4>
+                                    <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>RSA Rentals</h3>
+                    <p>Professional equipment for all your photography and videography needs.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#products">Rent a Camera</a></li>
+                        <li><a href="#products">Rent a Drone</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" aria-label="Email for newsletter">
+                        <button type="submit" aria-label="Subscribe to newsletter">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> RSA Rentals. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="modal-title"></h3>
+                    <button id="close-modal" aria-label="Close modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="modal-image">
+                        <img id="modal-image" src="" alt="">
+                    </div>
+
+                    <div class="modal-details">
+                        <div class="modal-info">
+                            <span>Price:</span>
+                            <span id="modal-price" class="modal-price"></span>
+                        </div>
+
+                        <div class="modal-info">
+                            <span>Status:</span>
+                            <span id="modal-status" class="modal-status"></span>
+                        </div>
+
+                        <div class="modal-specs">
+                            <h4>Specifications:</h4>
+                            <ul id="modal-specs"></ul>
+                        </div>
+
+                        <div class="modal-description">
+                            <h4>Description:</h4>
+                            <p id="modal-description-text"></p>
+                        </div>
+
+                        <div class="modal-actions">
+                            <div class="modal-dates">
+                                <label for="rental-dates">Rental Dates</label>
+                                <input type="text" id="rental-dates" placeholder="Select dates">
+                            </div>
+                            <button id="reserve-btn" class="reserve-btn">Reserve Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const playButton = document.getElementById("playButton");
+            const videoPlayer = document.getElementById("videoPlayer");
+            const promoVideo = document.getElementById("promo-video"); // Corrected ID
+
+            if (playButton && promoVideo) {
+                playButton.addEventListener("click", function () {
+                    if (promoVideo.paused || promoVideo.ended) {
+                        promoVideo.play();
+                        playButton.innerHTML = '<i class="fas fa-pause"></i>';
+                        promoVideo.controls = true;
+                    } else {
+                        promoVideo.pause();
+                        playButton.innerHTML = '<i class="fas fa-play"></i>';
+                    }
+                    playButton.style.display = 'none'; // Hide the play button after clicking
+                });
+
+                promoVideo.addEventListener('loadedmetadata', function() {
+                    promoVideo.controls = false; // Hide default controls initially
+                });
+            } else {
+                console.error("Play button or promo video element not found.");
+            }
+        });
+    </script>
+
+</body>
+</html>
